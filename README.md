@@ -5,7 +5,7 @@
    *NIM: 2209116013*
 
 2. **Dinda Nur Aini**  
-   *NIM: 2209116012*
+   *NIM: 2209116023*
 
 3. **Stephanie Elfriede Ginting**  
    *NIM: 2209116037*
