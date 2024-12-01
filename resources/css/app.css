@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    @apply antialiased;
+}
+
+.hero-gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.hero-slide {
+    @apply absolute inset-0 opacity-0 transition-opacity duration-1000;
+}
+
+.hero-slide.active {
+    @apply opacity-100;
+}
+
+.destination-card {
+    @apply transition-transform duration-300 hover:scale-105;
+}
+
+.destination-card img {
+    @apply transition-all duration-300;
+}
+
+.destination-card:hover img {
+    @apply transform scale-110;
+}
+
+.culinary-card {
+    @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+}
+
+.event-card {
+    @apply transition-all duration-300 hover:shadow-xl hover:border-red-500;
+}
+
+.nav-link {
+    @apply relative text-gray-700 hover:text-red-600 transition-colors duration-300;
+}
+
+.nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300;
+}
+
+.nav-link:hover::after {
+    @apply w-full;
+}
+
+.explore-btn {
+    @apply relative overflow-hidden transition-all duration-300;
+}
+
+.explore-btn::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full bg-white opacity-0 transition-opacity duration-300;
+}
+
+.explore-btn:hover::before {
+    @apply opacity-20;
+}
+
+.rumah-adat-card {
+    @apply transition-all duration-300 hover:shadow-xl;
+}
+
+.rumah-adat-card:hover {
+    @apply transform -translate-y-2;
+}
+
+@media (max-width: 640px) {
+    .hero-slide h1 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
